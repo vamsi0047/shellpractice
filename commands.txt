@@ -15,3 +15,38 @@ options:
       ex: -  is ,this --> here this has is in it
          grep -w "is" ---> this will only provide o/p of is
  --color -- this option will be used to 
+  -n number the output lines
+  -B --> print lines before matches
+      grep -B 3 -i "vamsi"
+  -A --> prints line after matches
+   -C --> prints both before and after lines 
+   ==========================================
+   tail: 
+     tail [option] file
+      -n number of lines
+        tail -n 5 filename --> prints last five lines
+
+      Tail command also comes with an ‘+’ option which is not present in the head command. With this option tail command prints the data starting from specified line number of the file instead of end.
+       tail +2 filename
+           print from 2nd line to end
+        
+      -f: This option is mainly used by system administration to monitor the growth of the log files written by many Unix program as they are running.
+    ==========================================
+    head:
+       head -n 5 filename
+          prints the first five lines
+    ==========================================
+     Sort:
+        SORT command is used to sort a file, arranging the records in a particular order.
+
+         -o --> this option is used to write output to a file
+             sort -o output.txt filename
+         -r --> sort in reverse order
+         -n --> to sort a file numericaly used.
+         -k Option : Unix provides the feature of sorting a table on the basis of any column number by using -k option.
+
+          sort -k 2n filename ---> to sort second column of the table
+        -c -- to check if file is already sorted or not
+        -u option : To sort and remove duplicates pass the -u option to sort
+    ===========================================
+    
