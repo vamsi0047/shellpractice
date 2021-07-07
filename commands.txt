@@ -1,0 +1,17 @@
+Grep stands for Globally search a Regular Expression and Print.
+grep [options] filename
+ or 
+sysout| grep [options]
+
+options:
+ -v --> to print all line except this matching patteren
+    grep -v "globalvar" filename --> this will print all line except the lines which containes globalvar
+ -i --> ignore case
+
+  -c -- count/ prints the count of occurance a particular Expression 
+      grep -c "vamsi" filename --> this is provide the count of vamsi present in the file
+  -R/-r recurcively
+  -w -- word. this matches only exact word 
+      ex: -  is ,this --> here this has is in it
+         grep -w "is" ---> this will only provide o/p of is
+ --color -- this option will be used to 
