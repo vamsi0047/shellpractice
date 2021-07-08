@@ -49,4 +49,21 @@ options:
         -c -- to check if file is already sorted or not
         -u option : To sort and remove duplicates pass the -u option to sort
     ===========================================
-    
+    sed:
+
+     -i -->option is used to modify directy in file insead of printing on console
+   -s --> subtitution
+   -g --> global
+   -n -->quite
+   -p --> prints on the console
+   -d -->delete
+   's/old_data/new_data/g'  ---> if g(global) not given it will replace the first occurance of every line
+   's/old_data/new_data/2' --->if will replace first and second occurances of every line
+   's/old_data/new_data/gi' ----> i is used for ignore case
+   's/old_data//g' --> this means it will remove old_Data and substitutes nothing
+      ex 's/\<[0-9][0-9][0-9]>//g' ---> this will remove all 3 digit numbers
+	  
+   '2-4p' --> prints lines from 2-4 ( prints twice if -n option is not used)
+   '2-4d' --> deletes 2-4 lines
+   =================================================================================
+      
