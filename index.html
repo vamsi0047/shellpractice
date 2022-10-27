@@ -1,0 +1,114 @@
+<html>
+    <style>
+        .body{
+            width: 100%;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: yellow;
+        }
+        .header{
+            border: 2px solid black;
+            width:100%;
+            height:50px;
+        }
+        .headerc1{
+            background-color: aqua;
+            width:100%;
+            height:100px;
+        }
+        .header2{
+            border: 2px solid black;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .nav1{
+            background-color: red;
+            width: 100px;
+            padding:10px;
+            justify-content: flex-start;
+            border: 2px solid black;
+            align-self: center;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            background-color: red;
+        }
+        .sidenav{
+            background-color: blueviolet;
+            width:20%;
+        }
+        .sidenav1{
+          justify-content: flex-start;
+          border: 2px solid black;
+          height:100px;
+        }
+
+    .side{
+        width: 80%;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .sidetop{
+        width: 100%;
+        height: 100px;
+        background-color: blueviolet;
+    }
+   
+    .side1{
+        flex-grow: 1;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .cont{
+        width:20%;
+        height: 100px;
+        background-color: beige;
+        padding: 3px;
+    }
+
+    </style>
+    <body>
+       <div class="body">
+        <div class="header"></div>
+       <div class="headerc1"></div>
+       <div class="header2">
+        <div class="nav1"></div>
+        <div class="nav1"></div>
+        <div class="nav1"></div>
+       </div>
+       <div class="main">
+          <div class="sidenav">
+            <div class="sidenav1"></div>
+            <div class="sidenav1"></div>
+            <div class="sidenav1"></div>
+            <div class="sidenav1"></div>
+          </div>
+          <div class="side">
+           <div class="sidetop"></div>
+           <div class="side1">
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+           </div>
+          </div>
+       </div>
+       </div>
+    </body>
+</html>
